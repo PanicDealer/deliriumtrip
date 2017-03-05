@@ -28,7 +28,11 @@ L=-L=-  L===-L======-L=-  L=-L=-L======-   L=-   L======-L=-  L===-   L=-       
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-
+<script>
+    function writeEmail(whom, at) {
+        document.write("<a href='mail" + "to:" + whom +"@" + at +"'>" + whom + "@" + at +"</a>");
+    }
+</script>
 
 
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
@@ -82,7 +86,10 @@ L=-L=-  L===-L======-L=-  L=-L=-L======-   L=-   L======-L=-  L===-   L=-       
                                 I work as HR Manager @ <a href="http://www.BansheeGz.com">BansheeGz</a>
                             </div>
                             <div class="centered" style="margin-top: 10px">
-                                <script language="JavaScript">document.write("Contact me: " + "funkydive" + "@" + "gmail.com");</script>
+                                Contact me:
+                                <script language="JavaScript">
+                                    writeEmail("funkydive", "gmail.com")
+                                </script>
                             </div>
                         </td>
                     </tr>

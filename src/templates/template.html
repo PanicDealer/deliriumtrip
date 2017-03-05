@@ -28,7 +28,11 @@ L=-L=-  L===-L======-L=-  L=-L=-L======-   L=-   L======-L=-  L===-   L=-       
     <link rel="stylesheet" href="#path css/main.css">
 </head>
 <body>
-
+<script>
+    function writeEmail(whom, at) {
+        document.write("<a href='mail" + "to:" + whom +"@" + at +"'>" + whom + "@" + at +"</a>");
+    }
+</script>
 
 
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
